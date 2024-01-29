@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CR-Car Rental</title>
+
+  
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      
+        <h1>Car Rentals</h1>
+      
+  
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#featured-car" class="navbar-link" data-nav-link>Explore cars</a>
+          </li>
+
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+
+        <div class="header-contact">
+          <a href="tel:88002345678" class="contact-link">+91-6302388908</a>
+
+          <span class="contact-time">Mon - Sat: 10:00 am - 9:00 pm</span>
+        </div>
+
+        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore cars</span>
+        </a>
+
+        <a href="#" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+
+      <section class="section hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+            <h2 class="h1 hero-title">Car Rentals In a Reasonable Prices</h2>
+
+            <p class="hero-text">
+              People who live in near by Chikkadpally,Secundrabad and RtcXroads.
+            </p>
+          </div>
+
+          <div class="hero-banner"></div>
+
+          <form action="" class="hero-form">
+
+            <div class="input-wrapper">
+              <label for="input-1" class="input-label">Car, model, or brand</label>
+
+              <input type="text" name="car-model" id="input-1" class="input-field"
+                placeholder="What car are you looking?">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="input-2" class="input-label">Max. monthly payment</label>
+
+              <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Add an amount in $?">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="input-3" class="input-label">Make Year</label>
+
+              <input type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year?">
+            </div>
+
+            <button type="submit" class="btn">Search</button>
+
+          </form>
+
+        </div>
+      </section>
+
+      <section class="section featured-car" id="featured-car">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Featured cars</h2>
+
+            <a href="#" class="featured-car-link">
+              <span>View more</span>
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="featured-car-list">
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-1.png" alt="Ford Endeavour" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Ford Endeavour</a>
+                    </h3>
+
+                    <data class="year" value="2021">2018</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">7 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Petrol</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">8.1km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>Rs 80K</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-2.png" alt="Audi Q series 2019" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Audi Q4</a>
+                    </h3>
+
+                    <data class="year" value="2019">2019</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Petrol</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">6.2km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>Rs 65K</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-3.png" alt="Swift D-zire 2020" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Swift D-zire</a>
+                    </h3>
+
+                    <data class="year" value="2020">2020</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">6.3km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>Rs 20K</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-4.png" alt="Honda City 2022" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Honda City</a>
+                    </h3>
+
+                    <data class="year" value="2020">2022</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">8.7km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>Rs 43K</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-5.png" alt="Verna 2021" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Verna</a>
+                    </h3>
+
+                    <data class="year" value="2021">2021</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">4 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Petrol</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7.6km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>Rs 59K</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-6.png" alt="Fortuner 2019" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Fortuner</a>
+                    </h3>
+
+                    <data class="year" value="2019">2019</data>
+                  </div>
+
+                  <ul class="card-list">
+
+                    <li class="card-list-item">
+                      <ion-icon name="people-outline"></ion-icon>
+
+                      <span class="card-item-text">7 People</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="flash-outline"></ion-icon>
+
+                      <span class="card-item-text">Petrol/Diesel</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="speedometer-outline"></ion-icon>
+
+                      <span class="card-item-text">7.2km / 1-litre</span>
+                    </li>
+
+                    <li class="card-list-item">
+                      <ion-icon name="hardware-chip-outline"></ion-icon>
+
+                      <span class="card-item-text">Automatic</span>
+                    </li>
+
+                  </ul>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>Rs 80K</strong> / month
+                    </p>
+
+                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn">Rent now</button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+      <section class="hero-section">
+        <div class="card-grid">
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url(https://www.rca.al/assets/blog-images/blogImage3.jpg)"></div>
+            <div class="card__content">
+              <h2 class="card__category">Customer Experience</h2>
+              <p class="card__heading">Many of our users are happy for our services and we provide very decent process of renting cars.</p>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url(https://www.boginmunns.com/wp-content/uploads/2023/06/who-pays-for-my-rental-car-after-an-accident-scaled.jpg)"></div>
+            <div class="card__content">
+              <h2 class="card__category">Car Condition</h2>
+              <p class="card__heading">We check car condition everywhile we handover to customer so you dont need to worry.</p>
+            </div>
+          </a>
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url(https://www.saferide.ph/wp-content/uploads/2022/09/loaner-car.jpg.webp)"></div>
+            <div class="card__content">
+              <h2 class="card__category">Car Maintenance</h2>
+              <p class="card__heading">We maintain our cars in a good way that we make servicing every once in a while we make sure of every inch by inspecting by our technicians.</p>
+            </div>
+          </li>
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url(https://magazine.northeast.aaa.com/wp-content/uploads/2020/11/seat-belt-history.jpg?w=640)"></div>
+            <div class="card__content">
+              <h2 class="card__category">Precautions</h2>
+              <p class="card__heading">Please assure that car is not our it is others and make sure of self and car please dont drink and drive</p>
+            </div>
+          </a>
+        <div>
+        </section>
+
+<div class="snip1192_parent">
+  <figure class="snip1192">
+    <blockquote>em erripuk cars ayya oka car sarriga ledhu orey babu evaru car rent ki theskokandra babu anni bokkalo cars eh unnai . </blockquote>
+    <div class="author">
+      <img src="data:image/jpeg;base64,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" alt="sq-sample1"/>
+      <h5>Shishiro  <span> Kala Bhairava</span></h5>
+    </div>
+  </figure>
+  <figure class="snip1192 hover">
+    <blockquote>paina shishiro cheppinavi em nammakandi bro carss baunnay manchi conditions lone unnay so you can for them.</blockquote>
+    <div class="author">
+      <img src="https://www.thestatesman.com/wp-content/uploads/2023/06/Fy6Om_8XsAMx4Et.jpg" alt="sq-sample24"/>
+      <h5>Tharun<span> Rasik raja</span></h5>
+    </div>
+  </figure>
+  <figure class="snip1192">
+    <blockquote>cars annni decent ga unnay andi but konni cars like audi avi konchem thakkuva rents unte bauntadhi and moreover everything is good .</blockquote>
+    <div class="author">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgicPlNGiF9ooH6h2_v3rEYL5-lTefGFmsNO-Qv1Ng95pwRj27O7ftDAI_dgJ7f4wgnCI&usqp=CAU" alt="sq-sample29"/>
+      <h5>Bala<span> Bulldozer</span></h5>
+    </div>
+  </figure>
+</div>
+
+    
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">Our Blog</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-1.jpg" alt="Opening of new offices of the company" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Company</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Opening of new offices of the company</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">Aug 15, 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-2.jpg" alt="What cars are most vulnerable" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Repair</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">What cars are most vulnerable to you</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">Oct 14, 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="123">123</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-3.jpg" alt="Statistics showed which average age" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Cars</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Statistics showed which average age</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">Dec 25, 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="130">130</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-4.jpg" alt="What´s required when renting a car?" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Cars</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">What´s required when renting a car?</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">Feb 16, 2023</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="144">144</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-5.jpg" alt="New rules for handling our cars" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <a href="#" class="btn card-badge">Company</a>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">New rules for handling our cars and engines.</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-01-14">January 14, 2022</time>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="150">150</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <p class="footer-text">
+            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
+            consumers an
+            attractive and fun selection.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pricing plans</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contacts</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ask a question</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & conditions</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Neighborhoods in Hyderabad</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Kukkatpally</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chikkadpally</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Secundrabad</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Madhapur</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Ameerpet</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="copyright">
+          &copy; 2024 <a href="#">Harshith</a>. All Rights Reserved
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
